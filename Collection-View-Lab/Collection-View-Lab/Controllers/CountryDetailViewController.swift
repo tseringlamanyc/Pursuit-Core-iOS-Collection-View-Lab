@@ -10,9 +10,17 @@ import UIKit
 
 class CountryDetailViewController: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var nameLabel: UILabel!
+    @IBOutlet weak var capitalLabel: UILabel!
+    @IBOutlet weak var populationLabel: UILabel!
+    
+    var country: Country?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        nameLabel.text = country?.name
         // Do any additional setup after loading the view.
     }
     

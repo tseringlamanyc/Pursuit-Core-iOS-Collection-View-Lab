@@ -69,7 +69,7 @@
                                             <outlet property="flagImageView" destination="G75-pw-Fcp" id="ez6-VA-mJ5"/>
                                             <outlet property="nameLabel" destination="cdx-a2-YxJ" id="wm0-nG-Yg0"/>
                                             <outlet property="populationLabel" destination="7kd-Gh-fzC" id="600-MW-Fda"/>
-                                            <segue destination="Dei-jT-AdD" kind="show" id="hnU-mL-uVQ"/>
+                                            <segue destination="Dei-jT-AdD" kind="show" identifier="countryToDetailSegue" id="hnU-mL-uVQ"/>
                                         </connections>
                                     </collectionViewCell>
                                 </cells>
@@ -132,6 +132,12 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gfu-Gk-TA7"/>
                     </view>
+                    <connections>
+                        <outlet property="capitalLabel" destination="fUd-yp-XDT" id="zv9-gG-285"/>
+                        <outlet property="imageView" destination="pMz-hJ-KbO" id="etY-0F-7wy"/>
+                        <outlet property="nameLabel" destination="6yb-xF-7Sa" id="Lse-on-drR"/>
+                        <outlet property="populationLabel" destination="zbt-FM-Oya" id="EJR-5D-vAM"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6eD-hm-Tf8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

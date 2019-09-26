@@ -24,6 +24,21 @@ class CountryListViewController: UIViewController {
         loadData()
     }
 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let selectedIndex = countryCollectionView.indexPath(for: sender as! UICollectionViewCell) else { print("no index selected")
+            return }
+        guard segue.identifier == "countryToDetailSegue" else { print("no ID'd segue")
+            return }
+        guard let countryDetailVC = segue.destination as? CountryDetailViewController else {
+            print("no destination VC")
+            return }
+
+        countryDetailVC.country
+         = countries[selectedIndex.row]
+        
+    }
+    
+    
     private func configureCollectionView() {
         countryCollectionView.delegate = self
         countryCollectionView.dataSource = self
@@ -41,6 +56,7 @@ class CountryListViewController: UIViewController {
             }
         }
     }
+    
 }
 
 extension CountryListViewController: UICollectionViewDataSource {

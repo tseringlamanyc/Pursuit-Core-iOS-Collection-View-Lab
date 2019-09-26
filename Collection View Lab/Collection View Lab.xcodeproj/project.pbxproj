@@ -15,6 +15,10 @@
 		084D6A99233D36B300F87B94 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 084D6A97233D36B300F87B94 /* LaunchScreen.storyboard */; };
 		084D6AA4233D36B300F87B94 /* Collection_View_LabTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6AA3233D36B300F87B94 /* Collection_View_LabTests.swift */; };
 		084D6AB3233D39D800F87B94 /* CountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6AB2233D39D800F87B94 /* CountryCollectionViewCell.swift */; };
+		084D6AB6233D482900F87B94 /* NetworkHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6AB5233D482900F87B94 /* NetworkHelper.swift */; };
+		084D6AB8233D483200F87B94 /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6AB7233D483200F87B94 /* ImageHelper.swift */; };
+		084D6ABA233D483D00F87B94 /* CountryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6AB9233D483D00F87B94 /* CountryAPIClient.swift */; };
+		084D6ABC233D487E00F87B94 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6ABB233D487E00F87B94 /* AppError.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,10 @@
 		084D6AA3233D36B300F87B94 /* Collection_View_LabTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Collection_View_LabTests.swift; sourceTree = "<group>"; };
 		084D6AA5233D36B300F87B94 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		084D6AB2233D39D800F87B94 /* CountryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCollectionViewCell.swift; sourceTree = "<group>"; };
+		084D6AB5233D482900F87B94 /* NetworkHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHelper.swift; sourceTree = "<group>"; };
+		084D6AB7233D483200F87B94 /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
+		084D6AB9233D483D00F87B94 /* CountryAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAPIClient.swift; sourceTree = "<group>"; };
+		084D6ABB233D487E00F87B94 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +89,7 @@
 		084D6A8B233D36B100F87B94 /* Collection View Lab */ = {
 			isa = PBXGroup;
 			children = (
+				084D6AB4233D437700F87B94 /* Network Files */,
 				084D6AB1233D39C800F87B94 /* Models */,
 				084D6AAF233D394900F87B94 /* View Controllers */,
 				084D6AB0233D395100F87B94 /* Views */,
@@ -132,6 +141,17 @@
 				084D6AB2233D39D800F87B94 /* CountryCollectionViewCell.swift */,
 			);
 			path = Models;
+			sourceTree = "<group>";
+		};
+		084D6AB4233D437700F87B94 /* Network Files */ = {
+			isa = PBXGroup;
+			children = (
+				084D6AB5233D482900F87B94 /* NetworkHelper.swift */,
+				084D6AB7233D483200F87B94 /* ImageHelper.swift */,
+				084D6AB9233D483D00F87B94 /* CountryAPIClient.swift */,
+				084D6ABB233D487E00F87B94 /* AppError.swift */,
+			);
+			path = "Network Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -236,9 +256,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				084D6A91233D36B100F87B94 /* ViewController.swift in Sources */,
+				084D6ABA233D483D00F87B94 /* CountryAPIClient.swift in Sources */,
 				084D6AB3233D39D800F87B94 /* CountryCollectionViewCell.swift in Sources */,
+				084D6AB6233D482900F87B94 /* NetworkHelper.swift in Sources */,
+				084D6ABC233D487E00F87B94 /* AppError.swift in Sources */,
 				084D6A8D233D36B100F87B94 /* AppDelegate.swift in Sources */,
 				084D6A8F233D36B100F87B94 /* SceneDelegate.swift in Sources */,
+				084D6AB8233D483200F87B94 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

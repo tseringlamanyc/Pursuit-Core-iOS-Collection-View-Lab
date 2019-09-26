@@ -24,12 +24,24 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         configureInitialViewController()
+        loadCountries()
     }
     
     private func configureInitialViewController() {
         countrySearchBar.delegate = self
         countryCollectionView.dataSource = self
         countryCollectionView.delegate = self
+    }
+    
+    private func loadCountries() {
+        CountryAPIClient.manager.getCountries { (result) in
+            switch result {
+            case .failure(let error):
+                print("Could not get countries: Error:\(error)")
+            case .success(let countriesArr):
+                self.arrayOfCountries = countriesArr
+            }
+        }
     }
     
 }

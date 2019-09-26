@@ -9,6 +9,13 @@
 import UIKit
 
 class ViewController: UIViewController {
+    //MARK: Properties
+    var arrayOfCountries: [Country] = [] {
+        didSet {
+            countryCollectionView.reloadData()
+        }
+    }
+    
     //MARK: IBOutlets
     @IBOutlet weak var countrySearchBar: UISearchBar!
     @IBOutlet weak var countryCollectionView: UICollectionView!
@@ -37,11 +44,18 @@ extension ViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        <#code#>
+        return arrayOfCountries.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        <#code#>
+        guard let cell = countryCollectionView.dequeueReusableCell(withReuseIdentifier: "countryCell", for: indexPath) as? CountryCollectionViewCell else {
+            return UICollectionViewCell()
+        }
+        let currentCountry = arrayOfCountries[indexPath.row]
+        cell.countryNameLabel.text = currentCountry.name
+        cell.capitalNameLabel.text = currentCountry.capital
+        cell.populationLabel.text = currentCountry.population.description
+        return cell
     }
     
     

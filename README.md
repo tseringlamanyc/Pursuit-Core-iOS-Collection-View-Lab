@@ -2,7 +2,7 @@
 
 # Summary
 
-Create an app that loads a list of countries.  This time with a Collection View!  Feel free to either start fresh with this repo, or refactor your earlier project to use a colleciton view instead.  Make sure to make a PR either way and submit that link to Canvas.  
+Create an app that loads a list of countries.  This time with a Collection View!  Feel free to either start fresh with this repo, or refactor your earlier project to use a collection view instead.  Make sure to make a PR either way and submit that link to Canvas.  
 
 Selecting a country will go to a detail view controller with more information about that country, including the conversion rate from their currency into USD.
 

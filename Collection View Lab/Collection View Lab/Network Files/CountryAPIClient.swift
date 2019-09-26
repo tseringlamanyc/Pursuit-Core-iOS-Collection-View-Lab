@@ -7,6 +7,7 @@
 //
 
 import Foundation
+import UIKit
 
 class CountryAPIClient {
     private init() {}
@@ -32,5 +33,18 @@ class CountryAPIClient {
                 }
             }
         }
+    }
+    
+    func getFlagImage(countryCode: String, completionHandler: @escaping (Result<UIImage, AppError>) -> () ) {
+        let urlString = "https://www.countryflags.io/\(countryCode)/shiny/64.png"
+        ImageHelper.shared.getImage(urlStr: urlString) { (result) in
+            switch result {
+            case .failure(_):
+                completionHandler(.failure(.notAnImage))
+            case .success(let flagImage):
+                completionHandler(.success(flagImage))
+            }
+        }
+        
     }
 }

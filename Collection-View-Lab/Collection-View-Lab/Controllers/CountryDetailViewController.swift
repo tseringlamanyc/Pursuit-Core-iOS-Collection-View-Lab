@@ -15,24 +15,32 @@ class CountryDetailViewController: UIViewController {
     @IBOutlet weak var capitalLabel: UILabel!
     @IBOutlet weak var populationLabel: UILabel!
     
-    var country: Country?
+    var country: Country!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        nameLabel.text = country?.name
-        // Do any additional setup after loading the view.
+        configureLabels()
+        loadImage()
+    }
+
+    private func configureLabels() {
+        nameLabel.text = country.name
+        capitalLabel.text = country.capital
+        populationLabel.text = "\(country.population)"
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func loadImage() {
+        ImageHelper.manager.getImage(urlStr: CountryAPIClient.getFlagImageURLStr(from: country.code)) { (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .failure (let error):
+                    print(error)
+                case .success (let imageFromOnline):
+                    self.imageView.image = imageFromOnline
+                }
+            }
+        }
     }
-    */
-
+    
 }

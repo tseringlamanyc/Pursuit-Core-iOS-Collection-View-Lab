@@ -17,6 +17,7 @@
 		EAE7596A233D288F004620FC /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE75969233D288F004620FC /* ImageHelper.swift */; };
 		EAE7596C233D2942004620FC /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE7596B233D2942004620FC /* Country.swift */; };
 		EAE7596E233D2A62004620FC /* CountryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE7596D233D2A62004620FC /* CountryAPIClient.swift */; };
+		EAE75970233D348C004620FC /* CountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE7596F233D348C004620FC /* CountryCollectionViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		EAE75969233D288F004620FC /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		EAE7596B233D2942004620FC /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		EAE7596D233D2A62004620FC /* CountryAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAPIClient.swift; sourceTree = "<group>"; };
+		EAE7596F233D348C004620FC /* CountryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCollectionViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				EAE75951233D1E3A004620FC /* Main.storyboard */,
+				EAE7596F233D348C004620FC /* CountryCollectionViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -187,6 +190,7 @@
 				EAE7596A233D288F004620FC /* ImageHelper.swift in Sources */,
 				EAE75950233D1E3A004620FC /* CountryListViewController.swift in Sources */,
 				EAE75966233D2850004620FC /* NetworkHelper.swift in Sources */,
+				EAE75970233D348C004620FC /* CountryCollectionViewCell.swift in Sources */,
 				EAE7596C233D2942004620FC /* Country.swift in Sources */,
 				EAE7594E233D1E3A004620FC /* AppDelegate.swift in Sources */,
 			);

@@ -12,9 +12,16 @@ class CountryListViewController: UIViewController {
 
     @IBOutlet weak var countryCollectionView: UICollectionView!
     
+    var countries = [Country]() {
+        didSet {
+            countryCollectionView.reloadData()
+        }
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configureCollectionView()
+        loadData()
     }
 
     private func configureCollectionView() {
@@ -22,15 +29,29 @@ class CountryListViewController: UIViewController {
         countryCollectionView.dataSource = self
     }
 
+    private func loadData() {
+        CountryAPIClient.manager.getCountries { (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .failure(let error):
+                    print(error)
+                case .success(let dataFromOnline):
+                    self.countries = dataFromOnline
+                }
+            }
+        }
+    }
 }
 
 extension CountryListViewController: UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 0
+        return countries.count
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        return UICollectionViewCell()
+        let countryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "countryCell", for: indexPath)
+        
+        return countryCell
     }
     
     

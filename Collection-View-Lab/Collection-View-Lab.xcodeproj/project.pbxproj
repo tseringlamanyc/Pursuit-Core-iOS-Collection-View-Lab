@@ -19,6 +19,7 @@
 		EAE7596E233D2A62004620FC /* CountryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE7596D233D2A62004620FC /* CountryAPIClient.swift */; };
 		EAE75970233D348C004620FC /* CountryCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE7596F233D348C004620FC /* CountryCollectionViewCell.swift */; };
 		EAE75972233D3D09004620FC /* CountryDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE75971233D3D09004620FC /* CountryDetailViewController.swift */; };
+		EAE75974233D52F5004620FC /* ExchangeRates.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE75973233D52F5004620FC /* ExchangeRates.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		EAE7596D233D2A62004620FC /* CountryAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAPIClient.swift; sourceTree = "<group>"; };
 		EAE7596F233D348C004620FC /* CountryCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCollectionViewCell.swift; sourceTree = "<group>"; };
 		EAE75971233D3D09004620FC /* CountryDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryDetailViewController.swift; sourceTree = "<group>"; };
+		EAE75973233D52F5004620FC /* ExchangeRates.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRates.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +97,7 @@
 			isa = PBXGroup;
 			children = (
 				EAE7596B233D2942004620FC /* Country.swift */,
+				EAE75973233D52F5004620FC /* ExchangeRates.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 				EAE75970233D348C004620FC /* CountryCollectionViewCell.swift in Sources */,
 				EAE75972233D3D09004620FC /* CountryDetailViewController.swift in Sources */,
 				EAE7596C233D2942004620FC /* Country.swift in Sources */,
+				EAE75974233D52F5004620FC /* ExchangeRates.swift in Sources */,
 				EAE7594E233D1E3A004620FC /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

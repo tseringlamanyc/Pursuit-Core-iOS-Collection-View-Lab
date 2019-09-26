@@ -16,6 +16,7 @@
 		EAE75968233D2873004620FC /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE75967233D2873004620FC /* AppError.swift */; };
 		EAE7596A233D288F004620FC /* ImageHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE75969233D288F004620FC /* ImageHelper.swift */; };
 		EAE7596C233D2942004620FC /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE7596B233D2942004620FC /* Country.swift */; };
+		EAE7596E233D2A62004620FC /* CountryAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = EAE7596D233D2A62004620FC /* CountryAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		EAE75967233D2873004620FC /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		EAE75969233D288F004620FC /* ImageHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageHelper.swift; sourceTree = "<group>"; };
 		EAE7596B233D2942004620FC /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		EAE7596D233D2A62004620FC /* CountryAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +82,7 @@
 				EAE75965233D2850004620FC /* NetworkHelper.swift */,
 				EAE75967233D2873004620FC /* AppError.swift */,
 				EAE75969233D288F004620FC /* ImageHelper.swift */,
+				EAE7596D233D2A62004620FC /* CountryAPIClient.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EAE75968233D2873004620FC /* AppError.swift in Sources */,
+				EAE7596E233D2A62004620FC /* CountryAPIClient.swift in Sources */,
 				EAE7596A233D288F004620FC /* ImageHelper.swift in Sources */,
 				EAE75950233D1E3A004620FC /* ViewController.swift in Sources */,
 				EAE75966233D2850004620FC /* NetworkHelper.swift in Sources */,

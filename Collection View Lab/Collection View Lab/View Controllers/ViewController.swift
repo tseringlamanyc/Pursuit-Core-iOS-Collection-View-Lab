@@ -16,9 +16,33 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        configureInitialViewController()
     }
-
-
+    
+    private func configureInitialViewController() {
+        countrySearchBar.delegate = self
+        countryCollectionView.dataSource = self
+        countryCollectionView.delegate = self
+    }
+    
 }
 
+extension ViewController: UISearchBarDelegate {
+    
+}
+
+extension ViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        <#code#>
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        <#code#>
+    }
+    
+    
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    
+}

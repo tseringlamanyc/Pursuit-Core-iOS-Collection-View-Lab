@@ -149,6 +149,12 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="d5y-BK-Oss"/>
                     </view>
+                    <connections>
+                        <outlet property="detailCapitalLabel" destination="hoY-Cj-3ig" id="hsf-kL-QkB"/>
+                        <outlet property="detailCountryNameLabel" destination="LwK-iE-Mgz" id="pih-d8-mKd"/>
+                        <outlet property="detailFlagImageView" destination="Wtm-qE-BSC" id="dd3-FK-bBN"/>
+                        <outlet property="detailPopulationLabel" destination="CvC-qb-HYi" id="11S-DH-a5y"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mme-7V-wKG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

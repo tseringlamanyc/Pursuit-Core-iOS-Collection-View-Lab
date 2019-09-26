@@ -90,10 +90,10 @@
             </objects>
             <point key="canvasLocation" x="1047.8260869565217" y="112.5"/>
         </scene>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="PGb-QR-2mN">
             <objects>
-                <viewController id="Lqo-z7-cqb" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="DetailViewController" id="Lqo-z7-cqb" customClass="DetailViewController" customModule="Collection_View_Lab" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xqd-GT-las">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

@@ -92,3 +92,13 @@ extension ViewController: UICollectionViewDelegateFlowLayout {
         return CGSize(width: 200, height: 200)
     }
 }
+
+
+extension ViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let selectedCountry = arrayOfCountries[indexPath.row]
+        let detailVC = storyboard?.instantiateViewController(identifier: "DetailViewController") as! DetailViewController
+        detailVC.country = selectedCountry
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
+}

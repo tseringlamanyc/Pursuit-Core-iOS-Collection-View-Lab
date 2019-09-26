@@ -10,11 +10,32 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var countryCollectionView: UICollectionView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        configureCollectionView()
     }
 
+    private func configureCollectionView() {
+        countryCollectionView.delegate = self
+        countryCollectionView.dataSource = self
+    }
 
 }
 
+extension ViewController: UICollectionViewDataSource {
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        return 0
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        return UICollectionViewCell()
+    }
+    
+    
+}
+
+extension ViewController: UICollectionViewDelegateFlowLayout {
+    
+}

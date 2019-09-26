@@ -67,6 +67,20 @@ extension ViewController: UICollectionViewDataSource {
         cell.countryNameLabel.text = currentCountry.name
         cell.capitalNameLabel.text = currentCountry.capital
         cell.populationLabel.text = currentCountry.population.description
+        
+        DispatchQueue.main.async {
+            CountryAPIClient.manager.getFlagImage(countryCode: currentCountry.countryCode) { (result) in
+                switch result {
+                case .failure(let error):
+                    print("Could not get image: \(error)")
+                case .success(let flagImage):
+                    DispatchQueue.main.async {
+                        cell.flagImageView.image = flagImage
+                    }
+                }
+            }
+        }
+        
         return cell
     }
     

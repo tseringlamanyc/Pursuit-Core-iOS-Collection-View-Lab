@@ -149,9 +149,9 @@
 		084D6AB4233D437700F87B94 /* Network Files */ = {
 			isa = PBXGroup;
 			children = (
+				084D6AB9233D483D00F87B94 /* CountryAPIClient.swift */,
 				084D6AB5233D482900F87B94 /* NetworkHelper.swift */,
 				084D6AB7233D483200F87B94 /* ImageHelper.swift */,
-				084D6AB9233D483D00F87B94 /* CountryAPIClient.swift */,
 				084D6ABB233D487E00F87B94 /* AppError.swift */,
 			);
 			path = "Network Files";

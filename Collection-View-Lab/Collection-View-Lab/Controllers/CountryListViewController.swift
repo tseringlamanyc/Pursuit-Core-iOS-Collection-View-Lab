@@ -49,7 +49,26 @@ extension CountryListViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let countryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "countryCell", for: indexPath)
+        guard let countryCell = collectionView.dequeueReusableCell(withReuseIdentifier: "countryCell", for: indexPath) as? CountryCollectionViewCell else {
+            fatalError("no cell ID")
+        }
+        
+        let country = countries[indexPath.row]
+        
+        countryCell.nameLabel.text = country.name
+        countryCell.capitalLabel.text = country.capital
+        countryCell.populationLabel.text = String(country.population)
+        
+        ImageHelper.manager.getImage(urlStr: CountryAPIClient.getFlagImageURLStr(from: country.code)) { (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .failure(let error):
+                    print(error)
+                case .success(let imageFromOnline):
+                    countryCell.flagImageView.image = imageFromOnline
+                }
+            }
+        }
         
         return countryCell
     }
@@ -57,6 +76,4 @@ extension CountryListViewController: UICollectionViewDataSource {
     
 }
 
-extension CountryListViewController: UICollectionViewDelegateFlowLayout {
-    
-}
+extension CountryListViewController: UICollectionViewDelegateFlowLayout {}

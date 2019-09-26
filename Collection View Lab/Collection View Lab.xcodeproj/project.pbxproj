@@ -79,12 +79,10 @@
 		084D6A8B233D36B100F87B94 /* Collection View Lab */ = {
 			isa = PBXGroup;
 			children = (
-				084D6A8C233D36B100F87B94 /* AppDelegate.swift */,
-				084D6A8E233D36B100F87B94 /* SceneDelegate.swift */,
-				084D6A90233D36B100F87B94 /* ViewController.swift */,
-				084D6A92233D36B100F87B94 /* Main.storyboard */,
+				084D6AAF233D394900F87B94 /* View Controllers */,
+				084D6AB0233D395100F87B94 /* Views */,
+				084D6AAE233D393D00F87B94 /* Supporting Files */,
 				084D6A95233D36B300F87B94 /* Assets.xcassets */,
-				084D6A97233D36B300F87B94 /* LaunchScreen.storyboard */,
 				084D6A9A233D36B300F87B94 /* Info.plist */,
 			);
 			path = "Collection View Lab";
@@ -97,6 +95,32 @@
 				084D6AA5233D36B300F87B94 /* Info.plist */,
 			);
 			path = "Collection View LabTests";
+			sourceTree = "<group>";
+		};
+		084D6AAE233D393D00F87B94 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				084D6A8C233D36B100F87B94 /* AppDelegate.swift */,
+				084D6A8E233D36B100F87B94 /* SceneDelegate.swift */,
+				084D6A97233D36B300F87B94 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		084D6AAF233D394900F87B94 /* View Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				084D6A90233D36B100F87B94 /* ViewController.swift */,
+			);
+			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		084D6AB0233D395100F87B94 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				084D6A92233D36B100F87B94 /* Main.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

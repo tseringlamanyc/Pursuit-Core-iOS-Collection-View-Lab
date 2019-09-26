@@ -9,7 +9,11 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    //MARK: IBOutlets
+    @IBOutlet weak var countrySearchBar: UISearchBar!
+    @IBOutlet weak var countryCollectionView: UICollectionView!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

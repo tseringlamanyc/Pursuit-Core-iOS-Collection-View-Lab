@@ -26,7 +26,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="countryCell" id="7GE-hf-bUq">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="countryCell" id="7GE-hf-bUq" customClass="CountryCollectionViewCell" customModule="Collection_View_Lab" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="201" height="191"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="C4g-yH-xob">
@@ -72,6 +72,12 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="201" height="191"/>
+                                        <connections>
+                                            <outlet property="capitalNameLabel" destination="nbe-tk-ogs" id="qTf-PL-mIR"/>
+                                            <outlet property="countryNameLabel" destination="AIV-wU-sIB" id="0jk-LX-9MA"/>
+                                            <outlet property="flagImageView" destination="Jmy-8w-wO2" id="btz-Tb-MWo"/>
+                                            <outlet property="populationLabel" destination="7jq-vl-yrX" id="yLJ-f1-sd7"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
                             </collectionView>
@@ -93,6 +99,10 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="JrE-29-Qx9"/>
+                    <connections>
+                        <outlet property="countryCollectionView" destination="MLx-Es-5eo" id="2RH-hh-pYi"/>
+                        <outlet property="countrySearchBar" destination="nd4-lB-CNh" id="nSs-ge-dFf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

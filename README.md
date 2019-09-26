@@ -6,9 +6,12 @@ Create an app that loads a list of countries.  This time with a Collection View!
 
 Selecting a country will go to a detail view controller with more information about that country, including the conversion rate from their currency into USD.
 
+Use https://www.countryflags.io/ to get the image in a png format
+
 ## Endpoints:
 
 - [Country list](https://restcountries.eu/rest/v2/name/united)
+- [Country flag image](https://www.countryflags.io/)
 - [Exchange rates](http://data.fixer.io/api/latest?access_key=a17aef5ece92cf36d9c5963f7f4babf1&format=1)
 - [Weather](https://www.metaweather.com/api/)
  

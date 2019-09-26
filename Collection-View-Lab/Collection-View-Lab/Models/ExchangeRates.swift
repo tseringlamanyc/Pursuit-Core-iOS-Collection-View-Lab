@@ -9,7 +9,7 @@
 import Foundation
 
 struct ExchangeRates: Codable {
-    let rates: [Dictionary<String, Double>]
+    let rates: Dictionary<String, Double>
     
     static func decodeExchangeRatesFromData(from jsonData: Data) throws -> ExchangeRates {
         let response = try JSONDecoder().decode(ExchangeRates.self, from: jsonData)

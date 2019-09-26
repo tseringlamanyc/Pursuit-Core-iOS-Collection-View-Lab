@@ -125,12 +125,20 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bgo-Ws-fDb">
+                                <rect key="frame" x="119" y="574" width="177" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="gfu-Gk-TA7"/>
                     </view>
                     <connections>
                         <outlet property="capitalLabel" destination="fUd-yp-XDT" id="zv9-gG-285"/>
+                        <outlet property="exchangeRateLabel" destination="bgo-Ws-fDb" id="Z3J-FP-Ggx"/>
                         <outlet property="imageView" destination="pMz-hJ-KbO" id="etY-0F-7wy"/>
                         <outlet property="nameLabel" destination="6yb-xF-7Sa" id="Lse-on-drR"/>
                         <outlet property="populationLabel" destination="zbt-FM-Oya" id="EJR-5D-vAM"/>

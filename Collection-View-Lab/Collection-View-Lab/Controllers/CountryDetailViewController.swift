@@ -14,16 +14,21 @@ class CountryDetailViewController: UIViewController {
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var capitalLabel: UILabel!
     @IBOutlet weak var populationLabel: UILabel!
+    @IBOutlet weak var exchangeRateLabel: UILabel!
     
     var country: Country!
-    
+    var rates: ExchangeRates!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         configureLabels()
-        loadImage()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        loadExchangeRates()
+        loadImage()
+    }
+    
     private func configureLabels() {
         nameLabel.text = country.name
         capitalLabel.text = country.capital
@@ -41,6 +46,28 @@ class CountryDetailViewController: UIViewController {
                 }
             }
         }
+    }
+
+    private func loadExchangeRates() {
+        ExchangeRatesAPIClient.manager.getRates { (result) in
+            DispatchQueue.main.async {
+                switch result {
+                case .failure(let error):
+                    print(error)
+                case .success(let ratesFromOnline):
+                    self.rates = ratesFromOnline
+                    print(ratesFromOnline)
+                    print(self.rates.rates["GBP"])
+                    print(self.country.currencies[0])
+                    let rateCode = self.country.currencies[0].code
+                    if let exchangeRate = self.rates.rates[rateCode] {
+                        self.exchangeRateLabel.text = "\(exchangeRate)"
+                    }
+                    
+                }
+            }
+        }
+        
     }
     
 }

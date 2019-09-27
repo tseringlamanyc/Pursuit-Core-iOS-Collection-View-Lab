@@ -12,6 +12,7 @@ class DetailViewController: UIViewController {
     //MARK: Properties
     var country: Country!
     var flagImage: UIImage!
+    var exchangeRateBaseEuro: ExchangeRate?
     
     //MARK: IBOutlets
     @IBOutlet weak var detailFlagImageView: UIImageView!
@@ -43,6 +44,19 @@ class DetailViewController: UIViewController {
                 }
             }
         }
+        
+//        DispatchQueue.main.async {
+//            guard let countryCurrencyCode = self.country.currencies[0].code else { return }
+//            ExchangeRateAPIClient.manager.getExchangeRate(countryCurrency: countryCurrencyCode) { (result) in
+//                switch result {
+//                case .failure(let error):
+//                    print(error)
+//                case .success(let exchangeRateInfo):
+//
+//                    self.detailExchangeRateLabel.text = exchangeRateInfo
+//                }
+//            }
+//        }
     }
     
 }

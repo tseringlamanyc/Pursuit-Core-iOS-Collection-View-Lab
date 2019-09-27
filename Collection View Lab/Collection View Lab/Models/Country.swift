@@ -24,6 +24,7 @@ struct Country: Codable {
     }
     
     struct Currency: Codable {
-        let code: String
+        let code: String?
+        let symbol: String?
     }
 }

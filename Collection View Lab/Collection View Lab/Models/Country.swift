@@ -13,11 +13,17 @@ struct Country: Codable {
     let capital: String
     let countryCode: String
     let population: Double
+    let currencies: [Currency]
     
     private enum CodingKeys: String, CodingKey {
         case name
         case capital
         case countryCode = "alpha2Code"
         case population
+        case currencies
+    }
+    
+    struct Currency: Codable {
+        let code: String
     }
 }

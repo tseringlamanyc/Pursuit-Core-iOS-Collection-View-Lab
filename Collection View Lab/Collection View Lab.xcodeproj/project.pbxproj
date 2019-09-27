@@ -21,6 +21,8 @@
 		084D6ABC233D487E00F87B94 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6ABB233D487E00F87B94 /* AppError.swift */; };
 		084D6ABE233D490A00F87B94 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6ABD233D490A00F87B94 /* Country.swift */; };
 		084D6AC0233D541D00F87B94 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6ABF233D541D00F87B94 /* DetailViewController.swift */; };
+		084D6AC2233DC11800F87B94 /* ExchangeRate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6AC1233DC11800F87B94 /* ExchangeRate.swift */; };
+		084D6AC4233DC15900F87B94 /* ExchangeRateAPIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 084D6AC3233DC15900F87B94 /* ExchangeRateAPIClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +54,8 @@
 		084D6ABB233D487E00F87B94 /* AppError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppError.swift; sourceTree = "<group>"; };
 		084D6ABD233D490A00F87B94 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		084D6ABF233D541D00F87B94 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		084D6AC1233DC11800F87B94 /* ExchangeRate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRate.swift; sourceTree = "<group>"; };
+		084D6AC3233DC15900F87B94 /* ExchangeRateAPIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateAPIClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -145,6 +149,7 @@
 			children = (
 				084D6AB2233D39D800F87B94 /* CountryCollectionViewCell.swift */,
 				084D6ABD233D490A00F87B94 /* Country.swift */,
+				084D6AC1233DC11800F87B94 /* ExchangeRate.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,6 +161,7 @@
 				084D6AB5233D482900F87B94 /* NetworkHelper.swift */,
 				084D6AB7233D483200F87B94 /* ImageHelper.swift */,
 				084D6ABB233D487E00F87B94 /* AppError.swift */,
+				084D6AC3233DC15900F87B94 /* ExchangeRateAPIClient.swift */,
 			);
 			path = "Network Files";
 			sourceTree = "<group>";
@@ -270,6 +276,8 @@
 				084D6A8D233D36B100F87B94 /* AppDelegate.swift in Sources */,
 				084D6AC0233D541D00F87B94 /* DetailViewController.swift in Sources */,
 				084D6A8F233D36B100F87B94 /* SceneDelegate.swift in Sources */,
+				084D6AC2233DC11800F87B94 /* ExchangeRate.swift in Sources */,
+				084D6AC4233DC15900F87B94 /* ExchangeRateAPIClient.swift in Sources */,
 				084D6AB8233D483200F87B94 /* ImageHelper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

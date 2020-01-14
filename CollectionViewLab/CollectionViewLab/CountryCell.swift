@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import ImageKit
 
 class CountryCell: UICollectionViewCell {
     
@@ -15,4 +16,22 @@ class CountryCell: UICollectionViewCell {
     @IBOutlet weak var capitalText: UILabel!
     @IBOutlet weak var populationText: UILabel!
     
+    func loadCell(country: Countries) {
+        countryName.text = country.name
+        populationText.text = country.population.description
+        capitalText.text = country.capital ?? "N/A"
+        
+        let imageURL = "https://www.countryflags.io/\(country.alpha2code.lowercased())/flat/64.png"
+        
+        countryImage.getImage(with: imageURL) { [weak self] (result) in
+            switch result {
+            case .failure(let appError):
+                print("\(appError)")
+            case .success(let image):
+                DispatchQueue.main.async {
+                    self?.countryImage.image = image
+                }
+            }
+        }
+    }
 }

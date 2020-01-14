@@ -36,6 +36,7 @@ class ViewController: UIViewController {
                     print("\(appError)")
                 case .success(let data):
                     self.country = data
+                    dump(self.country)
                 }
             }
         }
@@ -50,6 +51,13 @@ class ViewController: UIViewController {
                 self.country = data
             }
         }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let detailVC = segue.destination as? DetailCountryViewController, let indexpath = countryCV.indexPathsForSelectedItems!.first else {
+            fatalError()
+        }
+        detailVC.aCountry = country[indexpath.row]
     }
 }
 

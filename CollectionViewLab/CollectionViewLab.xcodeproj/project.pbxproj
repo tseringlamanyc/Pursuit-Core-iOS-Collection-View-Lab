@@ -17,6 +17,7 @@
 		52D3251E23CE4F31000878A7 /* ImageKit in Frameworks */ = {isa = PBXBuildFile; productRef = 52D3251D23CE4F31000878A7 /* ImageKit */; };
 		52D3252123CE50E2000878A7 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3252023CE50E2000878A7 /* CountryModel.swift */; };
 		52D3252323CE50F1000878A7 /* CountryAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52D3252223CE50F1000878A7 /* CountryAPI.swift */; };
+		52F6B43323CE689400A4D1F1 /* DetailCountryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52F6B43223CE689400A4D1F1 /* DetailCountryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		52D3251A23CE4E65000878A7 /* CountryCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryCell.swift; sourceTree = "<group>"; };
 		52D3252023CE50E2000878A7 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
 		52D3252223CE50F1000878A7 /* CountryAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryAPI.swift; sourceTree = "<group>"; };
+		52F6B43223CE689400A4D1F1 /* DetailCountryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCountryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				52D3250623CE4CE5000878A7 /* AppDelegate.swift */,
 				52D3250823CE4CE5000878A7 /* SceneDelegate.swift */,
 				52D3250A23CE4CE5000878A7 /* ViewController.swift */,
+				52F6B43223CE689400A4D1F1 /* DetailCountryViewController.swift */,
 				52D3250C23CE4CE5000878A7 /* Main.storyboard */,
 				52D3251A23CE4E65000878A7 /* CountryCell.swift */,
 				52D3250F23CE4CE6000878A7 /* Assets.xcassets */,
@@ -163,6 +166,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				52F6B43323CE689400A4D1F1 /* DetailCountryViewController.swift in Sources */,
 				52D3251B23CE4E65000878A7 /* CountryCell.swift in Sources */,
 				52D3250B23CE4CE5000878A7 /* ViewController.swift in Sources */,
 				52D3250723CE4CE5000878A7 /* AppDelegate.swift in Sources */,

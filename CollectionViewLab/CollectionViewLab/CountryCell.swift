@@ -22,7 +22,8 @@ class CountryCell: UICollectionViewCell {
         capitalText.text = country.capital ?? "N/A"
         
        // let imageURL1 = "https://www.countryflags.io/\(country.alpha2Code.lowercased())/flat/64.png"
-        let imageURL = "https://www.countryflags.io/\(country.alpha2Code)/flat/64.png"
+        let imageURL = "https://www.countryflags.io/\(country.alpha2Code)/shiny/64.png"
+        
         
         countryImage.getImage(with: imageURL) { [weak self] (result) in
             switch result {
@@ -31,6 +32,7 @@ class CountryCell: UICollectionViewCell {
             case .success(let image):
                 DispatchQueue.main.async {
                     self?.countryImage.image = image
+                    
                 }
             }
         }

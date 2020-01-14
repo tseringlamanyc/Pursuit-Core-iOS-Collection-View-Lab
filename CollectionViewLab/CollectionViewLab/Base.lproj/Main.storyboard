@@ -23,7 +23,7 @@
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="xGz-KW-6Uo">
                                 <rect key="frame" x="0.0" y="144" width="414" height="752"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f1C-Ig-Xbo">
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="f1C-Ig-Xbo">
                                     <size key="itemSize" width="385" height="306"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -58,17 +58,9 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zBZ-uV-U1h">
-                                                    <rect key="frame" x="8" y="275" width="369" height="21"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailing" secondItem="zBZ-uV-U1h" secondAttribute="trailing" constant="8" id="5Nb-x9-jWh"/>
                                                 <constraint firstItem="DqS-eq-Ulm" firstAttribute="leading" secondItem="tDr-TJ-WJN" secondAttribute="leading" constant="8" id="8N5-Wp-pS5"/>
-                                                <constraint firstItem="zBZ-uV-U1h" firstAttribute="leading" secondItem="tDr-TJ-WJN" secondAttribute="leading" constant="8" id="ALd-DC-ZIi"/>
                                                 <constraint firstItem="fLp-rW-gFl" firstAttribute="top" secondItem="DqS-eq-Ulm" secondAttribute="bottom" constant="8" id="HZt-Xd-n0Z"/>
                                                 <constraint firstAttribute="trailing" secondItem="bcm-cz-Bde" secondAttribute="trailing" constant="0.01" id="P5D-Y3-1HL"/>
                                                 <constraint firstItem="fLp-rW-gFl" firstAttribute="leading" secondItem="tDr-TJ-WJN" secondAttribute="leading" constant="8" id="WZj-Cm-UHV"/>
@@ -77,7 +69,6 @@
                                                 <constraint firstItem="oiQ-sU-xOX" firstAttribute="top" secondItem="bcm-cz-Bde" secondAttribute="bottom" constant="8" id="aMp-b9-I1O"/>
                                                 <constraint firstItem="DqS-eq-Ulm" firstAttribute="top" secondItem="oiQ-sU-xOX" secondAttribute="bottom" constant="8" id="caK-lh-Se4"/>
                                                 <constraint firstItem="bcm-cz-Bde" firstAttribute="height" secondItem="tDr-TJ-WJN" secondAttribute="height" multiplier="0.588235" id="fTp-dY-pNy"/>
-                                                <constraint firstItem="zBZ-uV-U1h" firstAttribute="top" secondItem="fLp-rW-gFl" secondAttribute="bottom" constant="8" id="hV9-0z-Xp7"/>
                                                 <constraint firstAttribute="trailing" secondItem="DqS-eq-Ulm" secondAttribute="trailing" constant="8" id="hpv-WH-Xwu"/>
                                                 <constraint firstItem="bcm-cz-Bde" firstAttribute="top" secondItem="tDr-TJ-WJN" secondAttribute="top" constant="0.01" id="hqC-yM-aku"/>
                                                 <constraint firstItem="oiQ-sU-xOX" firstAttribute="leading" secondItem="tDr-TJ-WJN" secondAttribute="leading" constant="8" id="qY8-wh-MN9"/>

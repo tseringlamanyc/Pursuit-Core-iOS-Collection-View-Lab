@@ -11,7 +11,7 @@ import NetworkHelper
 
 struct CountryAPI {
     static func getCountry(countrySearch: String, completionHandler: @escaping (Result<[Countries], AppError>) -> ()) {
-        let endpointURL = "https://restcountries.eu/rest/v2/name/\(countrySearch)"
+        let endpointURL = "https://restcountries.eu/rest/v2/name/\(countrySearch.lowercased())"
         guard let url = URL(string: endpointURL) else {
             completionHandler(.failure(.badURL(endpointURL)))
             return
